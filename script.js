@@ -1,13 +1,13 @@
 console.log("This is my Portfolio");
 
 function showNav(){
-    let navLiResp = document.getElementById("navLiResp");
+    let navLiResp = document.getElementById("respNav");
 
-    if(navLiResp.className==="navLi")
+    if(navLiResp.className==="navLiResp")
     {
-        navLiResp.className +=" resopnsive";
+        navLiResp.className +=" responsive";
     }
     else{
-        navLiResp.className = "navLi";
+        navLiResp.className = "navLiResp";
     }
 }
