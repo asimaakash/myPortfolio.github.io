@@ -63,7 +63,10 @@ nav img{
     cursor: pointer;
     display: none;
 }
-
+.navLiResp {
+    display: none;
+    /* color: white; */
+}
 /* Intro Div */
 
 .intro{
@@ -160,12 +163,9 @@ nav img{
 
 
 
-
-
-
-
-
 /* Project Section */
+
+
 .projectSection{
     display: flex;
     flex-direction: column;
@@ -201,7 +201,7 @@ nav img{
     margin-top: 12px;
     margin-bottom: 12px;
     box-shadow: 5px 10px;
-    word-break: break-all;
+    /* word-break: break-all; */
     overflow: auto;
 }
 
@@ -232,9 +232,18 @@ nav img{
     border-radius: 5px;
 }
 
-.imageAdd img{
-    height:33vh;
-    max-width: 80%;
+.imageAdd {
+    height: auto;
+    width: 35%;
+    /* margin-left: 40px; */
+    display: block;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.imageAdd img {
+    width: 70%;
+    height: auto;
 }
 
 
@@ -271,6 +280,9 @@ nav img{
     text-align: center;
 }
 
+
+/* Responsive */
+
 @media only screen and (max-width: 600px){
     .introContainer{
         display: flex;
@@ -278,20 +290,29 @@ nav img{
         justify-content: center;
         align-items: center;
     }
-    nav ul{
+    .navLi{
         display: none;
     }
-    nav .resopnsive{
-        position: absolute;
+    .navLiResp.responsive{
+        /* position: absolute;
         top: 100px;
-        left: 0px;
+        left: 0px; */
         background-color: #111;
-        height: 40vh;
+        height: 38vh;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transition: all 1s ease;
+        list-style: none;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .navLiResp.responsive a{
+        color: white;
+        text-decoration: none;
+        margin-top: 2.5vh;
     }
     
 
@@ -308,5 +329,20 @@ nav img{
     .intro{
         margin-top: 30px;
 
+    }
+
+    .nameText{
+        height: 25%;
+    }
+    .introImg img{
+        width: 55vw;
+        height: auto;
+    }
+    .projectDesign{
+        font-size: 2vh;
+    }
+
+    .sourceCodeBtn{
+        font-size: 2.5vh;
     }
 }
