@@ -26,14 +26,22 @@ hr{
     margin: 0px 3px;
 }
 nav{
-    /* background-color: rgb(3, 4, 29); */
-    background-color: #1b1b1b;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: rgba(0,0,0,0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index:2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:2rem;
+    display:flex;
+    gap:0.8rem;
+    border-radius:3rem;
+    backdrop-filter:blur(15px);
     
-}
+    
+    }
 
 .navLi  a{
     text-decoration: none;
@@ -46,6 +54,9 @@ ul a:hover{
     background-color: white;
     padding: 10px;
     transition: all .4s ease;
+    background: #4db5ff;
+    color:#1f1f38
+    
 }
 
 ul a li:hover{
@@ -68,7 +79,13 @@ nav img{
     /* color: white; */
 }
 /* Intro Div */
-
+some{
+    /* margin-top: 80px; */
+    height: 70px;
+    width: 80px;
+    margin-right: 300px;
+    margin-top: 60px;
+}
 .intro{
     /* margin-top: 20px; */
     display: flex;
